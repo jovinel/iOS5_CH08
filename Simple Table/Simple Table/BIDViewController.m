@@ -74,6 +74,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier];
     }
     
+    UIImage *image = [UIImage imageNamed:@"star.png"];
+    cell.imageView.image = image;
+    
     NSUInteger row = [indexPath row];
     cell.textLabel.text = [listData objectAtIndex:row];
     
